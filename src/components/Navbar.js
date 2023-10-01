@@ -7,7 +7,7 @@ import "../styles/Navbar.css";
 function Navbar() {
 const [openLinks, setOpenLinks ] = useState(false);
 
-const toggleNavbar = () =>{
+const toggleNavbar = () => {
   setOpenLinks(!openLinks);
   
 };
@@ -18,15 +18,15 @@ const toggleNavbar = () =>{
       <div className="leftSide" id={openLinks ? "open" : "close"}>
         <img src={Logo} alt="Logo" className="logo" />
         <div className="hiddenLinks">
-        <Link exact to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/"> Home </Link>
+        <Link to="/menu"> Menu </Link>
+        <Link to="/about"> About </Link>
+        <Link to="/contact"> Contact </Link>
         </div>
       </div>
 
       <div className="rightSide">
-        <Link exact to="/">Home</Link>
+        <Link to="/">Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>

@@ -4,6 +4,7 @@ import BannerImage from "../assets/pizza.jpg";
 import '../styles/Home.css';
 
 function Home() {
+  console.log('Home component rendered');
   return (
     <div className="home"   style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer" >
